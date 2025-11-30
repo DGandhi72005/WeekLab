@@ -1,3 +1,5 @@
+//Question 1
+
 /* One application of stacks is to keep track of things that must match up such as parentheses in an expression or
 braces in a program. In the case of parentheses when a left parenthesis is encountered it is pushed on the stack
 and when a right parenthesis is encountered its matching left parenthesis is popped from the stack. If the stack
