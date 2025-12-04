@@ -21,14 +21,14 @@ public class ParenMatch
     public static void main (String[] args)
     {
         Stack s = new Stack();
-        String line; // the string of characters to be checked
+        String line; 
         Scanner scan = new Scanner(System.in);
         System.out.println ("\nParenthesis Matching");
         System.out.print ("Enter a parenthesized expression: ");
         line = scan.nextLine();
         boolean codeError = false;
         int errorForTheIndex = -1;
-// loop to process the line one character at a time
+
         for (int i = 0; i < line.length() && !codeError; i++)
         {
             char ch = line.charAt(i);
@@ -48,7 +48,7 @@ public class ParenMatch
                 }
             }
         }
-// print the results
+
         if (codeError) {
             System.out.println("There is too many right parentheses.");
             System.out.println("Error at: " + line.substring(0, errorForTheIndex + 1));
